@@ -25,7 +25,7 @@
                     <a href="{{ route('items.index') }}">&lt; 戻る</a>                                  
                 </div>
                  
-                <form action="{{ route('items.update', $item) }}" method="item">
+                <form action="{{ route('items.update', $item) }}" method="post">
                      @csrf
                      @method('patch')
                     <div>

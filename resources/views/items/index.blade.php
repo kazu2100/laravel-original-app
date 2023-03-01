@@ -35,7 +35,7 @@
                              <div>
                                 <a href="{{ route('items.show', $item) }}">詳細</a>
                                 <a href="{{ route('items.edit', $item) }}">編集</a>
-                                <form action="{{ route('items.destroy', $item) }}" method="item">
+                                <form action="{{ route('items.destroy', $item) }}" method="post">
                                     @csrf 
                                     @method('delete')
                                     <button type="submit">削除</button>
