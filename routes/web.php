@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\ViewerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,13 @@ use App\Http\Controllers\ItemController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/welcome', function() {
+  return view('welcome');
+});
 Route::middleware('auth.basic')->group(function(){
 
 
-  Route::get('/', [ItemController::class, 'index']);
+
 
   // // 投稿の作成ページ
   // Route::get('/items/create', [ItemController::class, 'create'])->name('items.create');
@@ -41,3 +45,15 @@ Route::middleware('auth.basic')->group(function(){
   Route::resource('items', ItemController::class);
 
 });
+
+// ホーム画面
+Route::get('/viewers', [ViewerController::class, 'home'])->name('viewers.home');
+
+// 診断開始画面
+Route::get('/viewers/inspection', [ViewerController::class, 'inspection'])->name('viewers.inspection');
+
+// 診断終了画面
+Route::get('/viewers/finspection', [ViewerController::class, 'finspection'])->name('viewers.finspection');
+
+// 診断終了画面
+Route::get('/viewers/result', [ViewerController::class, 'result'])->name('viewers.result');
