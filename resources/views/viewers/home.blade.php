@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>訳あり肉診断ホーム画面</title>
+    @vite(['resources/js/app.js'])
 </head>
 
 <body>
@@ -18,12 +19,16 @@
     
     <main>
         <article>
-            <div>                
-                <h1>訳あり肉診断</h1>      
-                <h2>今、あなたが最も欲しい訳あり肉を診断します！</h2>         
-            </div>
-                <button class="#" type="share-button">共有ボタン</button>
             <div>
+                <img src="{{ asset('img/unnamed.jpg') }}" width="300" height="300">
+                <div>                
+                    <h1>訳あり肉診断</h1>      
+                    <h2>今、あなたが最も欲しい訳あり肉を診断します！</h2>         
+                </div>
+            </div>
+                    <button class="#" type="share-button">共有ボタン</button>
+                <div>
+
                 <p>
                     質問に答えていくとで、あなたが今、
                     最も欲しい訳あり肉を診断します！<br>

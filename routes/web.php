@@ -47,13 +47,13 @@ Route::middleware('auth.basic')->group(function(){
 });
 
 // ホーム画面
-Route::get('/viewers', [ViewerController::class, 'home'])->name('viewers.home');
+Route::get('/', [ViewerController::class, 'home'])->name('viewers.home');
 
 // 診断開始画面
-Route::get('/viewers/inspection', [ViewerController::class, 'inspection'])->name('viewers.inspection');
+Route::get('/inspection', [ViewerController::class, 'inspection'])->name('viewers.inspection');
 
 // 診断終了画面
-Route::get('/viewers/finspection', [ViewerController::class, 'finspection'])->name('viewers.finspection');
+Route::get('/finspection', [ViewerController::class, 'finspection'])->name('viewers.finspection');
 
-// 診断終了画面
-Route::get('/viewers/result', [ViewerController::class, 'result'])->name('viewers.result');
+// 診断結果画面
+Route::get('/result', [ViewerController::class, 'result'])->name('viewers.result');
