@@ -10,24 +10,22 @@
 
 <body>
     <header>
-        <nav>
-            <div>                
-                <a href="{{ route('viewers.home') }}">訳あり肉診断</a>          
-            </div>
-        </nav>
     </header>
 
     <main>
         <article>
             <div> 
-              <div>               
+              <div class="d-flex justify-content-center">               
                 <h1>訳あり肉診断</h1>   
               </div>  
-              <div>
+              <div class="d-flex justify-content-center">
+                  <img src="{{ asset('img/inspection.jpg') }}" width="50%">
+              </div>
+              <div class="d-flex justify-content-center">
                 <p>1</p>                                  
               </div>
-              <div>
-                <p>（質問）</p>
+              <div class="d-flex justify-content-center">
+                <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">値段と品質を重視するなら品質を重視する</h2>
               </div>
 
               <form action="#" method="inspection">
@@ -43,7 +41,7 @@
         </article>
     </main>
 
-    <footer>        
+    <footer class="d-flex justify-content-center">        
         <p>&copy; 訳あり肉診断 All rights reserved.</p>
     </footer>
 </body>

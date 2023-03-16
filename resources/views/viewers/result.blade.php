@@ -10,37 +10,37 @@
 
 <body>
     <header>
-        <nav>
-            <div>                
-                <a href="{{ route('viewers.home') }}">訳あり肉診断</a>          
-            </div>
-        </nav>
     </header>
 
     <main>
         <article>
             <div> 
-              <div>               
+              <div class="d-flex justify-content-center">               
                 <h1>訳あり肉診断</h1>   
               </div>  
-              <div>
-                <p>今あなたが最も欲しい訳あり肉は、、、（前振り）</p>                                  
+              <div class="d-flex justify-content-center">
+                  <img src="{{ asset('img/inspection.jpg') }}" width="50%">
               </div>
-              <div>
+              <div  class="d-flex justify-content-center">
+                <p>今あなたが最も欲しい訳あり肉は、、、</p>                                  
+              </div>
+              <div  class="d-flex justify-content-center">
                 <button onclick="location.href='#'"class="#" type="result-button">リンク</button>
               </div>
-              <div>
+              <div class="d-flex justify-content-center">
                 <p>（理由を説明）</p>
               </div>
-              <div>
+              <div class="d-flex justify-content-center">
                 <button class="#" type="share-button">共有ボタン</button>
+              </div>
+              <div class="d-flex justify-content-center">
                 <button  onclick="location.href='{{ route('viewers.home') }}'" class="#" type="try-button">もう一度診断ボタン</button>
               </div>
             </div>
         </article>
     </main>
 
-    <footer>        
+    <footer class="d-flex justify-content-center">        
         <p>&copy; 訳あり肉診断 All rights reserved.</p>
     </footer>
 </body>
