@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\ViewerController;
+use App\Http\Controllers\InspectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,10 +51,10 @@ Route::middleware('auth.basic')->group(function(){
 Route::get('/', [ViewerController::class, 'home'])->name('viewers.home');
 
 // 診断開始画面
-Route::get('/inspection', [ViewerController::class, 'inspection'])->name('viewers.inspection');
+Route::get('/inspection/{question}', [InspectionController::class, 'show'])->name('inspection.show');
 
 // 診断終了画面
-Route::get('/finspection', [ViewerController::class, 'finspection'])->name('viewers.finspection');
+Route::get('/finspection', [InspectionController::class, 'finish'])->name('inspection.finish');
 
 // 診断結果画面
 Route::get('/result', [ViewerController::class, 'result'])->name('viewers.result');

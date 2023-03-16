@@ -28,13 +28,13 @@
                 <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">値段と品質を重視するなら品質を重視する</h2>
               </div>
 
-              <form action="#" method="inspection">
+              <form action="{{ route('inspection.show', 'q2') }}" method="inspection">
                 <input type="radio" name="q1" value="あてはまる"> あてはまる
                 <input type="radio" name="q1" value="どちらかというとあてはまる"> どちらかというとあてはまる
                 <input type="radio" name="q1" value="どちらともいえない"> どちらともいえない
                 <input type="radio" name="q1" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
                 <input type="radio" name="q1" value="あてはまらない"> あてはまらない
-                <button href="{{ route('inspection.finish') }}" type="submit">next</button>
+                <button type="submit">next</button>
               </form>
               <a href="{{ route('inspection.finish') }}">仮ボタン（次の画面へ）</a>   
             </div>

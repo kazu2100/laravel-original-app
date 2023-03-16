@@ -25,7 +25,7 @@
                 <p>1</p>                                  
               </div>
               <div class="d-flex justify-content-center">
-                <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">値段と品質を重視するなら品質を重視する</h2>
+                <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">安い肉と高い肉の違いがわかる</h2>
               </div>
 
               <form action="#" method="inspection">
