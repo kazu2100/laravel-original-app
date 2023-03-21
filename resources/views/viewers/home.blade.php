@@ -27,21 +27,28 @@
                 <div>                   
                     <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">今、あなたが最も欲しい訳あり肉を診断します！</h2>         
                 </div>
-            </div>
-                <button class="#" type="share-button">共有ボタン</button>
-            <div class="d-flex justify-content-center">
-                <p>
-                    質問に答えていくとで、あなたが今、
-                    最も欲しい訳あり肉を診断します！
-                </p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <h3>
-                「診断」ボタンクリック↓
-                </h3>
-            </div>
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-danger w-25" onclick="location.href='{{ route('inspection.show', 'q1') }}'"class="#" type="share-button">診断開始</button>
+                <div class="d-flex justify-content-center">
+                    <div clss="pl-5" >
+                        <img src="{{ asset('img/FB.jpeg') }}" width="30%">
+                    </div>
+                    <div clss="border mx-1" >
+                        <img src="{{ asset('img/IG.jpeg') }}" width="30%">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p>
+                        質問に答えていくとで、あなたが今、
+                        最も欲しい訳あり肉を診断します！
+                    </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h3>
+                    「診断」ボタンクリック↓
+                    </h3>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-danger w-25" onclick="location.href='{{ route('inspection.show', 'q1') }}'"class="#" type="share-button">診断開始</button>
+                </div>
             </div>
         </article>
     </main>

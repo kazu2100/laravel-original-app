@@ -19,9 +19,9 @@
                 <h1>訳あり肉診断</h1>   
               </div>  
               <div class="d-flex justify-content-center">
-                  <img src="{{ asset('img/inspection.jpg') }}" width="50%">
+                  <img src="{{ asset('img/inspection.jpg') }}" width="30%">
               </div>
-              <div>
+              <div class="d-flex justify-content-center">
                 <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">診断終了！！！</h2>                                  
               </div>
               <div class="d-flex justify-content-center">
@@ -33,7 +33,7 @@
                   </h3>
               </div>
               <div class="d-flex justify-content-center">
-                <button onclick="location.href='{{ route('viewers.result') }}'"class="#" type="result-button">診断結果</button>
+                <button class="btn btn-danger w-25" onclick="location.href='{{ route('viewers.result') }}'"class="#" type="result-button">診断結果</button>
               </div>
             </div>       
         </article>

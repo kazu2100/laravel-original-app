@@ -22,14 +22,13 @@
                   <img src="{{ asset('img/inspection.jpg') }}" width="30%">
               </div>
               <div class="d-flex justify-content-center">
-                <img src="{{ asset('img/2.jpg') }}" width="10%">                         
+                <img src="{{ asset('img/3.jpg') }}" width="10%">               
               </div>
               <div class="d-flex justify-content-center">
                 <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">安い肉と高い肉の違いがわかる</h2>
               </div>
-
               <div class="d-flex justify-content-center">
-                <form action="{{ route('inspection.show', 'q3') }}" method="inspection">
+                <form action="#" method="inspection">
                   <div class="form-check">
                     <input type="radio" name="q1" value="あてはまる"> あてはまる
                   </div>

@@ -19,23 +19,37 @@
                 <h1>訳あり肉診断</h1>   
               </div>  
               <div class="d-flex justify-content-center">
-                  <img src="{{ asset('img/inspection.jpg') }}" width="50%">
+                  <img src="{{ asset('img/inspection.jpg') }}" width="30%">
               </div>
               <div class="d-flex justify-content-center">
-                <p>1</p>                                  
+                <img src="{{ asset('img/1.jpg') }}" width="10%">                         
               </div>
               <div class="d-flex justify-content-center">
                 <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">値段と品質を重視するなら品質を重視する</h2>
               </div>
 
-              <form action="{{ route('inspection.show', 'q2') }}" method="inspection">
-                <input type="radio" name="q1" value="あてはまる"> あてはまる
-                <input type="radio" name="q1" value="どちらかというとあてはまる"> どちらかというとあてはまる
-                <input type="radio" name="q1" value="どちらともいえない"> どちらともいえない
-                <input type="radio" name="q1" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
-                <input type="radio" name="q1" value="あてはまらない"> あてはまらない
-                <button type="submit">next</button>
-              </form>
+              <div class="d-flex justify-content-center">
+                <form action="{{ route('inspection.show', 'q2') }}" method="inspection">
+                  <div class="form-check">
+                    <input type="radio" name="q1" value="あてはまる"> あてはまる
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="q1" value="どちらかというとあてはまる"> どちらかというとあてはまる
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="q1" value="どちらともいえない"> どちらともいえない
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="q1" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="q1" value="あてはまらない"> あてはまらない
+                  </div>
+                  <div class="form-check">
+                    <button href="{{ route('inspection.finish') }}" type="submit">next</button>
+                  </div>
+                </form>
+              </div>
               <a href="{{ route('inspection.finish') }}">仮ボタン（次の画面へ）</a>   
             </div>
         </article>

@@ -19,7 +19,7 @@
                 <h1>訳あり肉診断</h1>   
               </div>  
               <div class="d-flex justify-content-center">
-                  <img src="{{ asset('img/inspection.jpg') }}" width="50%">
+                  <img src="{{ asset('img/inspection.jpg') }}" width="30%">
               </div>
               <div  class="d-flex justify-content-center">
                 <p>今あなたが最も欲しい訳あり肉は、、、</p>                                  
@@ -31,10 +31,15 @@
                 <p>（理由を説明）</p>
               </div>
               <div class="d-flex justify-content-center">
-                <button class="#" type="share-button">共有ボタン</button>
+                <div clss="pl-5" >
+                    <img src="{{ asset('img/FB.jpeg') }}" width="30%">
+                </div>
+                <div clss="border mx-1" >
+                    <img src="{{ asset('img/IG.jpeg') }}" width="30%">
+                </div>
               </div>
               <div class="d-flex justify-content-center">
-                <button  onclick="location.href='{{ route('viewers.home') }}'" class="#" type="try-button">もう一度診断ボタン</button>
+                <button class="btn btn-danger w-25" onclick="location.href='{{ route('viewers.home') }}'" class="#" type="try-button">もう一度診断ボタン</button>
               </div>
             </div>
         </article>
