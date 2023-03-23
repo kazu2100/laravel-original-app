@@ -31,20 +31,21 @@
               <div class="d-flex justify-content-center">
                 <form action="{{ route('inspection.show', 'q2') }}" method="inspection">
                   <div class="form-check">
-                    <input type="radio" name="q1" value="あてはまる"> あてはまる
+                    <input type="radio" name="score" value="5"> あてはまる
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="どちらかというとあてはまる"> どちらかというとあてはまる
+                    <input type="radio" name="q1" value="4"> どちらかというとあてはまる
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="どちらともいえない"> どちらともいえない
+                    <input type="radio" name="q1" value="3"> どちらともいえない
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
+                    <input type="radio" name="q1" value="2"> どちらかというとあてはまらない
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="あてはまらない"> あてはまらない
+                    <input type="radio" name="q1" value="1"> あてはまらない
                   </div>
+                  <input type="hidden" name="total_score" value="{{ $total_score }}">
                   <div class="form-check">
                     <button href="{{ route('inspection.finish') }}" type="submit">next</button>
                   </div>
