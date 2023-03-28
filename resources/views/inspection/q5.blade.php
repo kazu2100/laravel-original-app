@@ -22,28 +22,30 @@
                   <img src="{{ asset('img/inspection.jpg') }}" width="30%">
               </div>
               <div class="d-flex justify-content-center">
-                <img src="{{ asset('img/3.jpg') }}" width="10%">               
+                <img src="{{ asset('img/4.jpg') }}" width="10%">                         
               </div>
               <div class="d-flex justify-content-center">
-                <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">安い肉と高い肉の違いがわかる</h2>
+                <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">値段と品質を重視するなら品質を重視する</h2>
               </div>
+
               <div class="d-flex justify-content-center">
-                <form action="#" method="inspection">
+                <form action="{{ route('inspection.show', 'q5') }}" method="inspection">
                   <div class="form-check">
-                    <input type="radio" name="score" value="あてはまる"> あてはまる
+                    <input type="radio" name="score" value="5"> あてはまる
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="score" value="どちらかというとあてはまる"> どちらかというとあてはまる
+                    <input type="radio" name="score" value="4"> どちらかというとあてはまる
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="score" value="どちらともいえない"> どちらともいえない
+                    <input type="radio" name="score" value="3"> どちらともいえない
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="score" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
+                    <input type="radio" name="score" value="2"> どちらかというとあてはまらない
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="score" value="あてはまらない"> あてはまらない
+                    <input type="radio" name="score" value="1"> あてはまらない
                   </div>
+                  <input type="hidden" name="total_score" value="{{ $total_score }}">
                   <div class="form-check">
                     <button href="{{ route('inspection.finish') }}" type="submit">next</button>
                   </div>
@@ -64,13 +66,13 @@
 @extends('layouts.app')
 
 @section('number') 
-  <img src="{{ asset('img/3.jpg') }}" width="10%">
+  <img src="{{ asset('img/5.jpg') }}" width="10%">
 @endsection
 
-@section('question', 'よく高級肉を食べる')
+@section('question', '食べ物にはお金を惜しまない')
 
 @section('form')
-<form action="{{ route('inspection.show', 'q4') }}" method="inspection">
+<form action="{{ route('inspection.show', 'q6') }}" method="inspection">
   <div class="form-check">
     <input type="radio" name="score" value="5"> あてはまる
   </div>

@@ -43,5 +43,3 @@
         <p>&copy; 訳あり肉診断 All rights reserved.</p>
     </footer>
 </body>
-
-</html>

@@ -21,37 +21,38 @@
               <div class="d-flex justify-content-center">
                   <img src="{{ asset('img/inspection.jpg') }}" width="30%">
               </div>
-              
-              <div class="d-flex justify-content-center">
-                @yield('number')             
+              <div>
+                <div class="d-flex justify-content-center">
+                  @yield('number')             
+                </div>
+                <div class="d-flex justify-content-center">
+                  <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">@yield('question')</h2>
+                </div>
+                @yield('finish')
+                <div class="d-flex justify-content-center">
+                  @yield('form')
+                  {{-- <form action="#" method="inspection">
+                    <div class="form-check">
+                      <input type="radio" name="score" value="あてはまる"> あてはまる
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" name="score" value="どちらかというとあてはまる"> どちらかというとあてはまる
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" name="score" value="どちらともいえない"> どちらともいえない
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" name="score" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" name="score" value="あてはまらない"> あてはまらない
+                    </div>
+                    <div class="form-check">
+                      <button href="{{ route('inspection.finish') }}" type="submit">next</button>
+                    </div>
+                  </form> --}}
+                </div> 
               </div>
-              <div class="d-flex justify-content-center">
-                <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">@yield('question')</h2>
-              </div>
-              <div class="d-flex justify-content-center">
-                @yield('form')
-                {{-- <form action="#" method="inspection">
-                  <div class="form-check">
-                    <input type="radio" name="score" value="あてはまる"> あてはまる
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" name="score" value="どちらかというとあてはまる"> どちらかというとあてはまる
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" name="score" value="どちらともいえない"> どちらともいえない
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" name="score" value="どちらかというとあてはまらない"> どちらかというとあてはまらない
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" name="score" value="あてはまらない"> あてはまらない
-                  </div>
-                  <div class="form-check">
-                    <button href="{{ route('inspection.finish') }}" type="submit">next</button>
-                  </div>
-                </form> --}}
-              </div>
-              <a href="{{ route('inspection.finish') }}">仮ボタン（次の画面へ）</a>   
             </div>
         </article>
     </main>
