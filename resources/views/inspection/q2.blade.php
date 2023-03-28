@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -31,19 +31,19 @@
               <div class="d-flex justify-content-center">
                 <form action="{{ route('inspection.show', 'q3') }}" method="inspection">
                   <div class="form-check">
-                    <input type="radio" name="q1" value="5"> あてはまる
+                    <input type="radio" name="score" value="5"> あてはまる
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="4"> どちらかというとあてはまる
+                    <input type="radio" name="score" value="4"> どちらかというとあてはまる
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="3"> どちらともいえない
+                    <input type="radio" name="score" value="3"> どちらともいえない
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="2"> どちらかというとあてはまらない
+                    <input type="radio" name="score" value="2"> どちらかというとあてはまらない
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="q1" value="1"> あてはまらない
+                    <input type="radio" name="score" value="1"> あてはまらない
                   </div>
                   <input type="hidden" name="total_score" value="{{ $total_score }}">
                   <div class="form-check">
@@ -61,4 +61,35 @@
     </footer>
 </body>
 
-</html>
+</html> --}}
+@extends('layouts.app')
+
+@section('number') 
+  <img src="{{ asset('img/2.jpg') }}" width="10%">
+@endsection
+
+@section('question', '安い肉と高い肉の違いがわかる')
+
+@section('form')
+<form action="{{ route('inspection.show', 'q3') }}" method="inspection">
+  <div class="form-check">
+    <input type="radio" name="score" value="5"> あてはまる
+  </div>
+  <div class="form-check">
+    <input type="radio" name="score" value="4"> どちらかというとあてはまる
+  </div>
+  <div class="form-check">
+    <input type="radio" name="score" value="3"> どちらともいえない
+  </div>
+  <div class="form-check">
+    <input type="radio" name="score" value="2"> どちらかというとあてはまらない
+  </div>
+  <div class="form-check">
+    <input type="radio" name="score" value="1"> あてはまらない
+  </div>
+  <input type="hidden" name="total_score" value="{{ $total_score }}">
+  <div class="form-check">
+    <button href="{{ route('inspection.finish') }}" type="submit">next</button>
+  </div>
+</form>
+@endsection

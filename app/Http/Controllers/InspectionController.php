@@ -13,7 +13,7 @@ class InspectionController extends Controller
         if($request->has('total_score')){
             $total_score = $request->input('total_score');
         }
-        if($request->gas('score')){
+        if($request->has('score')){
             $total_score = $total_score + $request->input('score');
         }
         return view('inspection.'.$question, compact('total_score'));
