@@ -72,7 +72,7 @@
 @section('question', 'ついつい見栄を張ってしまう')
 
 @section('form')
-<form action="{{ route('inspection.show', 'q10') }}" method="inspection">
+<form action="{{ route('inspection.show', 'q10') }}" method="get">
   <div class="form-check">
     <input type="radio" name="score" value="5"> あてはまる
   </div>

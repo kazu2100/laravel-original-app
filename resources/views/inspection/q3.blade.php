@@ -70,7 +70,7 @@
 @section('question', 'よく高級肉を食べる')
 
 @section('form')
-<form action="{{ route('inspection.show', 'q4') }}" method="inspection">
+<form action="{{ route('inspection.show', 'q4') }}" method="get">
   <div class="form-check">
     <input type="radio" name="score" value="5"> あてはまる
   </div>

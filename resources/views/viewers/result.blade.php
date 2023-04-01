@@ -30,16 +30,12 @@
               <div class="d-flex justify-content-center">
                 <p>（理由を説明）</p>
               </div>
-              <div class="d-flex justify-content-center">
-                <div clss="pl-5" >
-                    <img src="{{ asset('img/FB.jpeg') }}" width="30%">
-                </div>
-                <div clss="border mx-1" >
-                    <img src="{{ asset('img/IG.jpeg') }}" width="30%">
-                </div>
-              </div>
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center my-4">
                 <button class="btn btn-danger w-25" onclick="location.href='{{ route('viewers.home') }}'" class="#" type="try-button">もう一度診断ボタン</button>
+              </div>
+              <div class="d-flex justify-content-center my-4">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="今、あなたが最も欲しい訳あり肉を診断します！" data-show-count="false">Tweet</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
             </div>
         </article>

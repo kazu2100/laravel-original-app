@@ -72,7 +72,7 @@
 @section('question', '値段と品質を重視するなら品質を重視する')
 
 @section('form')
-<form action="{{ route('inspection.show', 'q2') }}" method="inspection">
+<form action="{{ route('inspection.show', 'q2') }}" method="get">
   <div class="form-check">
     <input type="radio" name="score" value="5"> あてはまる
   </div>
@@ -90,7 +90,7 @@
   </div>
   <input type="hidden" name="total_score" value="{{ $total_score }}">
   <div class="form-check">
-    <button href="{{ route('inspection.finish') }}" type="submit">next</button>
+    <button type="submit">next</button>
   </div>
 </form>
 @endsection

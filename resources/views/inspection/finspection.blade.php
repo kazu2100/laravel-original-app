@@ -32,9 +32,10 @@
                   「診断」ボタンクリック↓
                   </h3>
               </div>
-              <div class="d-flex justify-content-center">
-                <button class="btn btn-danger w-25" onclick="location.href='{{ route('viewers.result') }}'"class="#" type="result-button">診断結果</button>
-              </div>
+              <form action="{{ route('viewers.result') }}" class="d-flex justify-content-center">
+                <input type="hidden" name="total_score" value="{{ $total_score }}">
+                <button type="submit" class="btn btn-danger w-25" id="result-button">診断結果</button>
+              </form>
             </div>       
         </article>
     </main>

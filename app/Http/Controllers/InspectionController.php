@@ -19,8 +19,15 @@ class InspectionController extends Controller
         return view('inspection.'.$question, compact('total_score'));
     }
     // 診断終了画面
-    public function finish()
+    public function finish(Request $request, string $question)
     {
-        return view('viewers.finspection');
+        $total_score = 0;
+        if($request->has('total_score')){
+            $total_score = $request->input('total_score');
+        }
+        if($request->has('score')){
+            $total_score = $total_score + $request->input('score');
+        }
+        return view('finspection.'.$question, compact('total_score'));
     }
 }
