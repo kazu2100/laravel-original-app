@@ -5,6 +5,7 @@ composer install --no-dev --working-dir=/var/www/html
 
 echo "Running npm"
 npm ci
+npm run build
 
 echo "Caching config..."
 php artisan config:cache
