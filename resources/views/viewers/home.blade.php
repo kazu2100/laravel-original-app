@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="d-flex justify-content-center">
-                <h1>訳あり肉診断</h1>   
+                <img src="{{ asset('img/title1.png') }}" width="50%">
                 <!-- <a href="{{ route('viewers.home') }}">訳あり肉診断</a>             -->
             </div>
         </nav>

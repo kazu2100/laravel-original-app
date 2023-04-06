@@ -16,7 +16,7 @@
         <article>
             <div> 
               <div class="d-flex justify-content-center">               
-                <h1>訳あり肉診断</h1>   
+                <img src="{{ asset('img/title1.png') }}" width="50%">  
               </div>  
               <div class="d-flex justify-content-center">
                   <img src="{{ asset('img/inspection.jpg') }}" width="30%">
