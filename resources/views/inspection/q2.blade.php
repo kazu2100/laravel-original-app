@@ -72,6 +72,7 @@
 
 @section('form')
 <form action="{{ route('inspection.show', 'q3') }}" method="get">
+  @csrf
   <div class="form-check">
     <input type="radio" name="score" value="5"> あてはまる
   </div>
