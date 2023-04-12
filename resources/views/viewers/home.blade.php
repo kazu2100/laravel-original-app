@@ -24,6 +24,9 @@
                 <div class="d-flex justify-content-center">
                     <img src="{{ asset('img/home.jpg') }}" width="50%">
                 </div>
+                <div>
+                    <p class="text-secondary">更新日：2024/4/12</p>
+                </div>
                 <div class="d-flex justify-content-center">                   
                     <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">今、あなたが最も欲しい訳あり肉を診断します！</h2>         
                 </div>

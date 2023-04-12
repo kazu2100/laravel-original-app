@@ -17,6 +17,9 @@ class InspectionController extends Controller
             $total_score = $total_score + $request->input('score');
         }
         return view('inspection.'.$question, compact('total_score'));
+        $request->validate([
+            'score' => 'required'
+        ]);
     }
     // 診断終了画面
     public function finish(Request $request, string $question)
