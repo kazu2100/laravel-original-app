@@ -17,7 +17,8 @@ class ViewerController extends Controller
         if($request->has('total_score')){
             $total_score = $request->input('total_score');
         }
-        $item = Item::latest()->first();
+        // $total_score以下なおかつ一番スコアが大きいデータ
+        $item = Item::where('price_score', '<=', $total_score)->orderBy('price_score', 'desc')->first();
         return view('viewers.result', compact('total_score', 'item'));
     }
 }

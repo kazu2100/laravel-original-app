@@ -9,6 +9,9 @@ class InspectionController extends Controller
     // 診断開始画面
     public function show(Request $request, string $question)
     {
+        $request->validate([
+            'score' => 'required'
+        ]);
         $total_score = 0;
         if($request->has('total_score')){
             $total_score = $request->input('total_score');
@@ -17,9 +20,6 @@ class InspectionController extends Controller
             $total_score = $total_score + $request->input('score');
         }
         return view('inspection.'.$question, compact('total_score'));
-        $request->validate([
-            'score' => 'required'
-        ]);
     }
     // 診断終了画面
     public function finish(Request $request, string $question)

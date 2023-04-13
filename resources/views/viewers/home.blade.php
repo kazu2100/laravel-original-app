@@ -42,7 +42,7 @@
                     </h3>
                 </div>
                 <div class="d-flex justify-content-center my-4">
-                    <button class="btn btn-danger w-25" onclick="location.href='{{ route('inspection.show', 'q1') }}'"class="#" type="share-button">診断開始</button>
+                    <button class="btn btn-danger w-25" onclick="location.href='{{ route('inspection.show', [ 'question' => 'q1', 'score' => 0 ]) }}'"class="#" type="share-button">診断開始</button>
                 </div>
                 <div class="d-flex justify-content-center my-4">
                     <div>
