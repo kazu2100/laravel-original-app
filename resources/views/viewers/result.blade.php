@@ -15,6 +15,15 @@
     <main>
         <article>
             <div> 
+              @if ($errors->any())
+              <div>
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+              @endif     
               <div class="d-flex justify-content-center">               
                 <img src="{{ asset('img/title1.png') }}" width="50%">  
               </div>  

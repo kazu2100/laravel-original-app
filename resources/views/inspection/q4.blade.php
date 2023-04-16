@@ -75,7 +75,7 @@
 @csrf
 <form action="{{ route('inspection.show', 'q5') }}" method="get">
   <div class="form-check">
-    <input type="radio" name="score" value="5"> あてはまる
+    <input type="radio" name="score" value="5" checked> あてはまる
   </div>
   <div class="form-check">
     <input type="radio" name="score" value="4"> どちらかというとあてはまる
