@@ -22,11 +22,9 @@
     <main>
         <article>
             <div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex-column align-items-center">
                     <img src="{{ asset('img/home.jpg') }}" width="50%">
-                </div>
-                <div>
-                    <p class="text-secondary">更新日：2024/4/12</p>
+                    <p class="text-secondary w-50">更新日：2024/4/12</p>
                 </div>
                 <div class="d-flex justify-content-center">                   
                     <h2 class="d-flex justify-content-center p-3 mb-2 bg-danger text-dark">今、あなたが最も欲しい訳あり肉を診断します！</h2>         
@@ -43,7 +41,7 @@
                     </h3>
                 </div>
                 <div class="d-flex justify-content-center my-4">
-                    <button class="btn btn-danger w-25" onclick="location.href='{{ route('inspection.show', [ 'question' => 'q1', 'score' => 0 ]) }}'"class="#" type="share-button">診断開始</button>
+                    <button class="btn btn-danger w-25 fs-1" onclick="location.href='{{ route('inspection.show', [ 'question' => 'q1', 'score' => 0 ]) }}'"class="#" type="share-button">診断開始</button>
                 </div>
                 <div class="d-flex justify-content-center my-4">
                     <div>
